@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="Pro1.css">
+</head>
+<body>
+
+    <!-- LOGIN PAGE -->
+    <div id="loginPage" class="page active">
+        <div class="login-box">
+            <h2>Weather Forecast Login</h2>
+            <input type="text" id="username" placeholder="Enter Username">
+            <input type="password" id="password" placeholder="Enter Password">
+            <button onclick="login()">Login</button>
+            <p id="loginError"></p>
+        </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="page">
+        <header>
+            <h1>Weather Forecast App</h1>
+            <button class="logout" onclick="logout()">Logout</button>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Search City...">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div class="weather-card">
+            <h2 id="cityName">City</h2>
+            <p id="temperature">Temperature: -- °C</p>
+            <p id="humidity">Humidity: -- %</p>
+            <p id="pressure">Pressure: -- hPa</p>
+            <p id="wind">Wind Direction: --°</p>
+        </div>
+    </div>
+
+<script src="Pro1.js"></script>
+</body>
+</html>
